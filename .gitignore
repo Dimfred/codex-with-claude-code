@@ -1,0 +1,104 @@
+# GENERAL
+**/build/*
+**/*.log
+.env
+
+# EDITOR
+**/.DS_Store
+*.iml
+*.ipr
+*.iws
+*.swn
+*.swo
+*.swp
+*~
+.VSCodeCounter
+.clj-kondo/
+.idea
+.idea
+.lsp/
+.nvim
+.vimspector.json
+.vscode/
+.nb-gradle/
+nbbuild/
+nbdist/
+nbproject/private/
+
+# JAVA / MAVEN
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+plugins
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# PYTHON
+**/__pycache__
+**/**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.pytest_cache
+.hypothesis
+**/try.py
+**/celerybeat-schedule
+out/
+wheels/
+**/*.ju.py
+**/.ipynb_checkpoints/
+**/.mypy_cache
+venv/
+.venv/
+**/*.whl
+
+# AI
+lightning_logs/
+runs/
+.aider*
+**/*.onnx
+**/*.pt
+**/*.pkl
+**/*.npy
+
+# NODE JS TS
+**/node_modules
+out/
+dist/
+.svelte-kit
+
+# Editor / OS temporaries
+
+# CPP
+**/*.dll
+**/.ccls-cache
+**/clangd
+**/compile_commands.json
+.cache
+CMakeCache.txt
+CMakeFiles
+compile-commands.json
+doxygen
+
+# SOLIDITY
+**/cache
+**/artifacts
+**/*coverage*
+**/@openzeppelin/*
+**/gasReporterOutput.json
+
+# SWIFT
+.build
+
+# DB
+**/*.db
+
+# SUBMODULES
+
+

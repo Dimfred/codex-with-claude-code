@@ -1,0 +1,23 @@
+codex_model: &codex_model chatgpt/gpt-5.3-codex
+
+litellm_settings:
+  callbacks:
+    - callbacks.strip_system_messages
+
+model_list:
+  # Route all Claude Opus models to ChatGPT Codex
+  - model_name: claude-opus-4-5
+    model_info:
+      mode: responses
+    litellm_params:
+      model: *codex_model
+  - model_name: claude-opus-4-6
+    model_info:
+      mode: responses
+    litellm_params:
+      model: *codex_model
+  - model_name: claude-opus-4-7
+    model_info:
+      mode: responses
+    litellm_params:
+      model: *codex_model
