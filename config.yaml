@@ -1,6 +1,7 @@
 # Available models: gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.3-codex-spark (Pro only)
 # gpt-5.5 may still be rolling out - use gpt-5.4 as fallback
 codex_model: &codex_model chatgpt/gpt-5.5
+haiku_model: &haiku_model chatgpt/gpt-5.4-mini
 
 litellm_settings:
   callbacks:
@@ -23,3 +24,9 @@ model_list:
       mode: responses
     litellm_params:
       model: *codex_model
+  # Route Claude Haiku models to a smaller ChatGPT Codex model
+  - model_name: claude-haiku-4-5-20251001
+    model_info:
+      mode: responses
+    litellm_params:
+      model: *haiku_model
