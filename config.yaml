@@ -1,4 +1,6 @@
-codex_model: &codex_model chatgpt/gpt-5.3-codex
+# Available models: gpt-5.5, gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.3-codex-spark (Pro only)
+# gpt-5.5 may still be rolling out - use gpt-5.4 as fallback
+codex_model: &codex_model chatgpt/gpt-5.5
 
 litellm_settings:
   callbacks:
